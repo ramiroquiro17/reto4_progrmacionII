@@ -10,27 +10,37 @@
     <body class="bg-white">
       <!-- Navbar de Bootstrap -->          
       <nav class="navbar shadow p-2 fixed-top navbar-expand-sm navbar-dark bg-dark aria-label="Third navbar example">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                  <img src="img/Logo1.jpg" alt="" width="200">
-              </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarsExample03">
-              <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-                      <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#nosotros.html">Nosotros</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#Conctacto">Conctacto</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#">Registrarse</a></li>                        
-                  </ul>
-              <form role="search">
-                <input class="form-control" type="search" placeholder="buscar" aria-label="Search">
-              </form>
-            </div>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/Logo1.jpg" alt="" width="200">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#nosotros.html">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Conctacto">Conctacto</a></li>
+              <li class="nav-item"><a class="nav-link" href="formulario.html">Registrarse</a></li>   
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="bicicletas.html">Bicicletas</a></li>
+                  <li><a class="dropdown-item" href="accesorios.html">Accesorios</a></li>
+                  <li><a class="dropdown-item" href="indumentaria.html">Indumentaria</a></li>
+                  <li><a class="dropdown-item" href="repuestos.html">Repuestos</a></li>
+                </ul>
+              </li>                     
+            </ul>
+            <form role="search">
+              <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+            </form>
           </div>
-      </nav>       
+        </div>
+    </nav>       
       <p>.</p>
       <p>.</p>      
       <!-- FIN de Navbar de Bootstrap -->
@@ -79,34 +89,34 @@
     <div class="row row-cols-1 row-cols-xl-4 g-4 mt-4">
       <div class="col">
         <div id class="card text-bg-dark border-light text-center text-light mt-4">
-          <a href="bicicletas.html"></a><img src="Img/card01.jpg" class="card-img" alt="..."></a>
-          <div class="row align-items-center card-img-overlay">
-            <h5 class="card-title">Bicicletas</h5>
-          </div>
+          <a href="bicicletas.html"><img src="Img/card01.jpg" class="card-img" alt="..."></a>
+          
+          <h5 class="card-title">Bicicletas</h5>
+          
         </div>
       </div>
       <div class="col">
         <div class="card text-bg-dark border-light text-center mt-4">
           <a href="accesorios.html"><img src="Img/card02.png" class="card-img" alt="..."></a>
-          <div class="row align-items-center text-warning card-img-overlay">
-            <h5 class="card-title">Accesorios</h5>
-          </div>
+          
+          <h5 class="card-title">Accesorios</h5>
+          
         </div>
       </div>
       <div class="col">
         <div class="card text-bg-dark border-light text-center mt-4">
-          <a href="indumentarias.html"><img src="Img/card03.png" class="card-img" alt="..."></a>
-          <div class="row align-items-center text-light card-img-overlay">
-            <h5 class="card-title">Indumentaria</h5>
-          </div>
+          <a href="indumentaria.html"><img src="Img/card03.png" class="card-img" alt="..."></a>
+          
+          <h5 class="card-title">Indumentaria</h5>
+          
         </div>
       </div>
       <div class="col">
         <div class="card text-bg-dark border-light text-center mt-4">
           <a href="repuestos.html"><img src="Img/card04.png" class="card-img" alt="..."></a>
-          <div class="row align-items-center text-light card-img-overlay">
-            <h5 class="card-title">Repuestos</h5>
-          </div>
+          
+          <h5 class="card-title">Repuestos</h5>
+          
         </div>
       </div>
   </div>
@@ -119,41 +129,50 @@
           <div class="p-3 mb-2 bg-ligh text-dark"><h3 class="text-center pb-5 pt-5 h1">Ofertas del momento</h3></div>            
         </div>
       <!-- Siguiente Fila de Cards de Bootstrap... -->
-        <div class="row row-cols-1 row-cols-xl-4 g-4">
-          <div class="col">
-            <div class="card text-bg-white ">
-              <a link><img src="#" class="card-img" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">nombre</h5>
-                <p class="card-text">Descripcion</p>
-              </div>
+      
+      <div class="row row-cols-1 row-cols-md-4 g-3 my-3">
+        <div class="col">
+          <div class="card h-100">
+            <img src="Img/bici.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bicicleta Trek Mtb X-caliber 9 R29 Talle Xl</h5>
+              <p class="card-text">$300.000</p>
+              <a href="#" class="btn btn-primary">COMPRAR</a>
             </div>
           </div>
-          <div class="col">
-            <div class="card text-bg-white ">
-              <a link><img src="#" class="card-img" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">nombre</h5>
-                <p class="card-text">Descripcion</p>
-              </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/bici.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bicicleta Trek Mtb X-caliber 9 R29 Talle Xl</h5>
+              <p class="card-text">$300.000</p>
+              <a href="#" class="btn btn-primary">COMPRAR</a>
+            </div>
           </div>
-          <div class="col">
-            <div class="card text-bg-white ">
-              <a link><img src="#" class="card-img" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">nombre</h5>
-                <p class="card-text">Descripcion</p>
-              </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/bici.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bicicleta Trek Mtb X-caliber 9 R29 Talle Xl</h5>
+              <p class="card-text">$300.000</p>
+              <a href="#" class="btn btn-primary">COMPRAR</a>
+            </div>
           </div>
-          <div class="col">
-            <div class="card text-bg-white ">
-              <a link><img src="#" class="card-img" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">nombre</h5>
-                <p class="card-text">Descripcion</p>
-              </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/bici.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bicicleta Trek Mtb X-caliber 9 R29 Talle Xl</h5>
+              <p class="card-text">$300.000</p>
+              <a href="#" class="btn btn-primary">COMPRAR</a>
+            </div>
           </div>
+        </div>
       </div>
+    </div>
     
 
 
@@ -211,26 +230,7 @@
               </div>
               <!-- Grid column -->
       
-              <!-- Grid column -->
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Products
-                </h6>
-                <p>
-                  <a href="#!" class="text-reset">Angular</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">React</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Vue</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Laravel</a>
-                </p>
-              </div>
-              <!-- Grid column -->  
+      
       
               <!-- Grid column -->
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
