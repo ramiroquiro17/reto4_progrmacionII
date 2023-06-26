@@ -1,9 +1,11 @@
 import { Grid, GridItem, SimpleGrid } from '@chakra-ui/react';
 import Producto from '../components/productos';
 import Sidebar from '../components/lista';
-import Navbar from '../components/navbar';
+import Navbar from '../components/barraNavegacion';
+import Footer from '../components/footer';
 export default function Repuestos(){
-    return <><Navbar /><Grid templateColumns="repeat(6, 1fr)">
+    return (<><Navbar />
+    <Grid templateColumns="repeat(6, 1fr)">
     <GridItem colSpan={1} as="aside">
       <Sidebar />
     </GridItem>
@@ -17,5 +19,6 @@ export default function Repuestos(){
         <Producto />
       </SimpleGrid>
     </GridItem>
-  </Grid></>
+  </Grid>
+  <Footer/></>) 
 }
