@@ -9,10 +9,9 @@ function Sidebar() {
       minH="100vh"
       py="6"
       px="4"
-      shadow="md"
       display={{ base: 'none', md: 'block' }}
     >
-      <VStack spacing="4" align="stretch" divider={<StackDivider />}>
+      <VStack spacing="4" align="stretch" divider={<StackDivider/>}>
         <Link to={'/bicicletas'}>
             <Button variant="ghost" size="lg">
             Bicicletas
