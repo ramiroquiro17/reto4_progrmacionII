@@ -10,12 +10,29 @@ export default function Bicicletas(){
       </GridItem>
       <GridItem colSpan={5} margin={12}>
         <SimpleGrid spacing={4} minChildWidth={250}>
-          <Producto />
-          <Producto />
-          <Producto />
-          <Producto />
-          <Producto />
-          <Producto />
+          <Producto 
+          nombre="Venzo SKYLINE Shadow R29 Negro Rojo T18"
+          img="bici1"
+          precio="300.000"/>
+          <Producto 
+          nombre="Bicicleta Mojave 4.0 R29"
+          img="bici2"
+          precio="250.000"/>
+          <Producto 
+          nombre="Bicicleta Raleigh 700C Classic Nexus 3V."
+          img="bici3"
+          precio="350.000"/>
+          <Producto nombre="Venzo SKYLINE Shadow R29 Negro Rojo T18"
+          img="bici1"
+          precio="300.000"/>
+          <Producto 
+          nombre="Bicicleta Mojave 4.0 R29"
+          img="bici2"
+          precio="250.000"/>
+          <Producto 
+          nombre="Bicicleta Raleigh 700C Classic Nexus 3V."
+          img="bici3"
+          precio="350.000"/>
         </SimpleGrid>
       </GridItem>
     </Grid>

@@ -11,12 +11,30 @@ export default function Indumentaria(){
     </GridItem>
     <GridItem colSpan={5} margin={12}>
       <SimpleGrid spacing={4} minChildWidth={250}>
-        <Producto />
-        <Producto />
-        <Producto />
-        <Producto />
-        <Producto />
-        <Producto />
+      <Producto 
+      nombre="Casco Raleigh R-15 NEGRO Talle L"
+      img="ind1"
+      precio="150.000"/>
+      <Producto 
+      nombre="Zapatilla Shimano MTB SH-ME2 Negro Talle 37"
+      img="ind2"
+      precio="300.000"/>
+      <Producto 
+      nombre="Casco Vertigo VX Negro Brillante TALLE M"
+      img="ind3"
+      precio="170.000"/>
+      <Producto 
+      nombre="Casco Raleigh R-15 NEGRO Talle L"
+      img="ind1"
+      precio="150.000"/>
+      <Producto 
+      nombre="Zapatilla Shimano MTB SH-ME2 Negro Talle 37"
+      img="ind2"
+      precio="300.000"/>
+      <Producto 
+      nombre="Casco Vertigo VX Negro Brillante TALLE M"
+      img="ind3"
+      precio="170.000"/>
       </SimpleGrid>
     </GridItem>
   </Grid>

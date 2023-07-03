@@ -11,12 +11,30 @@ export default function Accesorios(){
     </GridItem>
     <GridItem colSpan={5} margin={12}>
       <SimpleGrid spacing={4} minChildWidth={250}>
-        <Producto />
-        <Producto />
-        <Producto />
-        <Producto />
-        <Producto />
-        <Producto />
+        <Producto 
+        nombre="Cable Rulo 10 x 1500mm FireBird"
+        img="acc1"
+        precio="3.000"/>
+        <Producto   
+        nombre="Parche redondo 30mm TG"
+        img="acc2"
+        precio="100"/>
+        <Producto 
+        nombre="Bolsito Bajo Asiento Basico"
+        img="acc3"
+        precio="5.000"/>
+        <Producto 
+        nombre="Cable Rulo 10 x 1500mm FireBird"
+        img="acc1"
+        precio="3.000"/>
+        <Producto 
+        nombre="Parche redondo 30mm TG"
+        img="acc2"
+        precio="100"/>
+        <Producto 
+        nombre="Bolsito Bajo Asiento Basico"
+        img="acc3"
+        precio="5.000"/>
       </SimpleGrid>
     </GridItem>
   </Grid>
