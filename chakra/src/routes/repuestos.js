@@ -11,12 +11,30 @@ export default function Repuestos(){
     </GridItem>
     <GridItem colSpan={5} margin={12}>
       <SimpleGrid spacing={4} minChildWidth={250}>
-        <Producto />
-        <Producto />
-        <Producto />
-        <Producto />
-        <Producto />
-        <Producto />
+        <Producto 
+        nombre="Pedales BMX MTB WKNS 571"
+        img="rep1"
+        precio="5.000"/>
+        <Producto 
+        nombre="Terminal funda freno negro"
+        img="rep2"
+        precio="1.000"/>
+        <Producto 
+        nombre="Tope Aluminio WKNS Cable Cambio/Freno"
+        img="rep3"
+        precio="100"/>
+        <Producto 
+        nombre="Pedales BMX MTB WKNS 571"
+        img="rep1"
+        precio="5.000"/>
+        <Producto 
+        nombre="Terminal funda freno negro"
+        img="rep2"
+        precio="1.000"/>
+        <Producto 
+        nombre="Tope Aluminio WKNS Cable Cambio/Freno"
+        img="rep3"
+        precio="100"/>
       </SimpleGrid>
     </GridItem>
   </Grid>
