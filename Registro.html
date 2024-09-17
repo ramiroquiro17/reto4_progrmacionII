@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!--se crea una clase contenedora-->
+  <div class="container">
+    <!--se crea un formulario-->
+    <form class="row g-3 mt-3 needs-validation" novalidate>
+        <div class="col-6 position-relative">
+            <label for="emailinput" class="formlabel">Email</label>
+            <input type="email" class="form-control" id="emailinput" placeholder="Introduzca su email">
+        <!--clase de vadilación, si es valido se marca en verde, de lo contrario en rojo-->
+            <div class="valid-tooltip">
+                Email ingresado con éxito
+            </div>
+            <div class="invalid-tooltip">
+                Es necesario poner un Email
+            </div>
+        </div>
+
+        <div class="col-6 position-relative">
+            <label for="inputpass" class="formlabel">Contraseña</label>
+            <input type="password" class="form-control" id="inputpass" placeholder="Introduzca una contraseña">
+
+            <div class="valid-tooltip">
+                Contraseña ingresada con éxito
+            </div>
+            <div class="invalid-tooltip">
+                Es necesario poner una contraseña
+            </div>
+        </div>
+
+        <div class="col-12 position-relative">
+            <label for="inputaddress" class="formlabel">Dirección</label>
+            <input type="text" class="form-control" id="inputaddress" placeholder="Dirección">
+
+            <div class="valid-tooltip">
+                Dirección ingresada con éxito
+            </div>
+            <div class="invalid-tooltip">
+                Es necesario poner una dirección
+            </div>
+        </div>
+
+        <div class="col-12 position-relative">
+            <label for="inputaddress2" class="formlabel">Dirección 2</label>
+            <input type="text" class="form-control" id="inputaddress2" placeholder="Dirección 2">
+            
+            <div class="valid-tooltip">
+                Otra dirección ingresada con éxito
+            </div>
+            <div class="invalid-tooltip">
+                Es necesario poner otra dirreción
+            </div>
+        </div>
+
+        <div class="col-6 position-relative">
+            <label for="inputcity" class="formlabel">Ciudad</label>
+            <input type="text" class="form-control" id="inputcity" placeholder="Introduzca nombre de su ciudad">
+
+            <div class="valid-tooltip">
+                Ciudad ingresada con éxito
+            </div>
+            <div class="invalid-tooltip">
+                Es necesario poner una ciudad
+            </div>
+        </div>
+
+        <div class="col-3 position-relative">
+            <label for="inputpostal" class="formlabel">Código postal</label>
+            <input type="text" class="form-control" id="inputpostal" placeholder="Introduzca su código postal">
+
+            <div class="valid-tooltip">
+                Código postal ingresado con éxito
+            </div>
+            <div class="invalid-tooltip">
+                Es necesario poner un código postal
+            </div>
+        </div>
+
+        <div class="col-3 position-relative">
+            <label for="inputcountry" class="formlabel">País</label>
+            <input type="text" class="form-control" id="inputcountry" placeholder="Introduzca su país">
+
+            <div class="valid-tooltip">
+                País ingresado con éxito
+            </div>
+            <div class="invalid-tooltip">
+                Es necesario poner un País
+            </div>
+        </div>
+
+        <div class="col-12 position-relative">
+            <div class="form-check">
+                <input type="checkbox" id="checkterms" class="form-check-input">
+                <label for="checkterms" class="form-check-label">Acepto los términos</label>
+<!--botón de cequeo de aceptación de términos-->
+            </div>
+            <div class="valid-tooltip">
+                Términos aceptados con éxito
+            </div>
+            <div class="invalid-tooltip">
+                Es necesario aceptar los términos
+            </div>
+        </div>
+<!--botón para registrarse-->
+        <div class="col-12 position-relative">
+            <button type="submit" class="btn btn-primary">
+                Registrarse
+            </button>
+        </div>
+
+    </form>
+  </div>
+  <!--script para la validación-->
+  <script>
+    // se marcará en caso de haber campos inválidos (vácios o que no coincidan con lo pedido)
+(() => {
+    'use strict'
+  
+    // trae todos los datos enviados para que el css de bootstrap muestre cambios según la situación
+    const forms = document.querySelectorAll('.needs-validation')
+  
+    // realiza loop y previene el envio
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+  
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
+  </script>  
+</body>
+</html>
